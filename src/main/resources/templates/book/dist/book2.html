@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../static/css/login.css" th:href="@{/css/login.css}">
+</head>
+<body>
+<div class="login-page">
+
+    <div class="form">
+
+        <ul>
+            <li th:value="${book}">
+                <span th:text="${book.name}">Default</span>
+                <span th:text="${book.link}">Click the link</span>
+                <a th:href="${book.link}"> <span th:text="${book.link}">Click the link</span></a>
+
+            </li>
+        </ul>
+
+    </div>
+
+</div>
+<!-- partial -->
+<script src='../../../static/js/login.js'></script>
+<script src="../../../static/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../static/css/home.css" th:href="@{/css/home.css}">
+</head>
+<body>
+<h1>Home Page</h1>
+<form method="post" th:action="home" th:object="${userDTO}">
+    <nav>
+        <a href="/home">Home</a>
+        <a href="/book">Books</a>
+        <a href="/login">Log out</a>
+    </nav>
+</form>
+</body>
+</html>
